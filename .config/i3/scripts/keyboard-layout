@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+KBD=$(/usr/bin/xkblayout-state print '%n' | head -c -4 | sed 's/eng/en/gI' | tr [:lower:] [:upper:])
+echo $KBD
+

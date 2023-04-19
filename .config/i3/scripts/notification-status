@@ -1,0 +1,16 @@
+# !/bin/bash
+
+updatetext() {
+	if [ $(dunstctl is-paused) == 'true' ]; then
+		echo ""
+	else
+		echo ""
+	fi
+}
+
+if [ $button ]; then
+	dunstctl set-paused toggle
+	updatetext
+else
+	updatetext
+fi
